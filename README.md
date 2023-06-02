@@ -2,8 +2,6 @@
 
 This VHDL code demonstrates the behavior of a 3-to-8 decoder with an active-low enable signal and positive logic. It utilizes behavioral programming using signal selection or conditional signal instructions, as discussed in class.
 
-![image](https://github.com/qzxtu/Vhdl-Dec3_8/assets/69091361/0f512f6f-5f0b-4a81-bd25-1f8797e51a52)
-
 ## Code Description
 
 The VHDL code consists of an entity `dec3a8` and an architecture `Behavioral`. Here's a breakdown of the code functionality:
@@ -31,6 +29,18 @@ The architecture `Behavioral` implements the behavior of the 3-to-8 decoder. Her
    - "00000100" when B = "110"
    - "00000010" for all other combinations of B
 4. Finally, the output signal `C` is assigned the value of `ax` when the enable signal `A` is '0'. If `A` is '1', then `C` is set to "00000000".
+
+## Decoder Output Truth Table
+|  A  |  B[2]  |  B[1]  |  B[0]  |  C[7]  |  C[6]  |  C[5]  |  C[4]  |  C[3]  |  C[2]  |  C[1]  |  C[0]  |
+|:---:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+|  0  |   0    |   0    |   0    |   1    |   0    |   0    |   0    |   0    |   0    |   0    |   0    |
+|  0  |   0    |   0    |   1    |   0    |   1    |   0    |   0    |   0    |   0    |   0    |   0    |
+|  0  |   0    |   1    |   0    |   0    |   0    |   1    |   0    |   0    |   0    |   0    |   0    |
+|  0  |   0    |   1    |   1    |   0    |   0    |   0    |    1   |   0    |   0    |   0    |   0    |
+|  0  |   1    |   0    |   0    |   0    |   0    |   0    |   0    |   1    |   0    |   0    |   0    |
+|  0  |   1    |   0    |   1    |   0    |   0    |   0    |   0    |   0    |   1    |   0    |   0    |
+|  0  |   1    |   1    |   0    |   0    |   0    |   0    |   0    |   0    |   0    |   1    |   0    |
+|  1  |   X    |   X    |   X    |   0    |   0    |   0    |   0    |   0    |   0    |   0    |   0    |
 
 ## Usage
 
