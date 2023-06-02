@@ -1,6 +1,17 @@
 # 3-to-8 Decoder with Active-Low Enable
 
 This VHDL code demonstrates the behavior of a 3-to-8 decoder with an active-low enable signal and positive logic. It utilizes behavioral programming using signal selection or conditional signal instructions, as discussed in class.
+                                 
+              +------+            
+        A ----|      |---- C[7]  
+      B[2] ---|      |---- C[6]  
+      B[1] ---|      |---- C[5]  
+      B[0] ---|      |---- C[4]  
+              |      |---- C[3]  
+              |      |---- C[2]  
+              |      |---- C[1]  
+              |      |---- C[0]  
+              +------+            
 
 ## Code Description
 
